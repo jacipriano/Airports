@@ -23,7 +23,7 @@ public class Time {
     public static int getTime(Time dep,int depTZ, Time arr, int arrTZ){
 
 
-        return ((arr.hour*60+ arr.minute+arrTZ*60)-(dep.hour*60+ dep.minute+depTZ*60));
+        return ((arr.hour+arrTZ)*60+ arr.minute)-((dep.hour+depTZ)*60+ dep.minute);
     }
     public int getHour() {
         return hour;
