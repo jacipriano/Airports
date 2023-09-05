@@ -44,6 +44,10 @@ public class Airport {
 
     }
 
+    public int getTimezome() {
+        return timezome;
+    }
+
     @Override
     public String toString() {
         return "{" +
